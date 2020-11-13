@@ -1,0 +1,8 @@
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.vcxprojAssemblyReference.cache
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.Form1.resources
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.vcxproj.GenerateResource.cache
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.MyForm.resources
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.AgregarAlumno.resources
+D:\Repositorios\ALGORITMOS\Debug\umg.png
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.VistaAlumnos.resources
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.ReporteAlumnos.resources

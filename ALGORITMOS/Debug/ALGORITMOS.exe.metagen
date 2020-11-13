@@ -1,0 +1,75 @@
+  ALGORITMOS.AgregarAlumno.resources - Embedded, ContainedInManifestFile, 
+  ALGORITMOS.Form1.resources - Embedded, ContainedInManifestFile, 
+  ALGORITMOS.MyForm.resources - Embedded, ContainedInManifestFile, 
+  ALGORITMOS.ReporteAlumnos.resources - Embedded, ContainedInManifestFile, 
+  ALGORITMOS.VistaAlumnos.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ALGORITMOS, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ALGORITMOS.AgregarAlumno: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.ComboBox btn_cursos : Public
+    System.Windows.Forms.TextBox txt_carnet : Public
+    System.Windows.Forms.TextBox txt_nombre : Public
+    System.Windows.Forms.TextBox txt_final : Public
+    System.Windows.Forms.TextBox txt_total : Public
+    System.Windows.Forms.TextBox txt_tareas : Public
+    System.Windows.Forms.TextBox txt_parcial2 : Public
+    System.Windows.Forms.TextBox txt_parcial1 : Public
+  Methods:
+    toSystemString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+    toStandardString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, Static, HideBySig
+    RetornarTotal(): PrivateScope, Public, HideBySig
+    CargarDatos($ArrayType$$$BY04V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@* IsConst IsConst, Int32): PrivateScope, Public, HideBySig
+Class ALGORITMOS.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.TextBox txt_anio : Public
+    System.Windows.Forms.TextBox txt_facultad : Public
+    System.Windows.Forms.TextBox txt_cat : Public
+    System.Windows.Forms.TextBox txt_codigo : Public
+    System.Windows.Forms.TextBox txt_nombre : Public
+  Methods:
+    RetornarCadenas(): PrivateScope, Public, HideBySig
+    btn_agregar_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    RetornarNombre(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    toStandardString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, Static, HideBySig
+    toSystemString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+Class ALGORITMOS.VistaAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LlenarGrid($ArrayType$$$BY04V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@* IsConst IsConst): PrivateScope, Public, HideBySig
+    Convertir(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+Class ALGORITMOS.ReporteAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LlenarDatos(vector<Alumno\,std::allocator<Alumno> >*, $ArrayType$$$BY04V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@* IsConst IsConst): PrivateScope, Public, HideBySig
+    toSystemString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+Class CppCLRWinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 tamanio : Public
+  Methods:
+    LimpiarPanel(): PrivateScope, Public, HideBySig
+    InsertarInfo(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    toSystemString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+    toStandardString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, Static, HideBySig
+    AbrirFormulario(Form): PrivateScope, Public, HideBySig
