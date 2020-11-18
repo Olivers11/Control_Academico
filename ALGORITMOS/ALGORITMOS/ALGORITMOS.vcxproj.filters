@@ -44,6 +44,9 @@
     <ClInclude Include="ReporteAlumnos.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="FormAsistencia.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinformsProjekt.cpp">
@@ -71,6 +74,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="ReporteAlumnos.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="FormAsistencia.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

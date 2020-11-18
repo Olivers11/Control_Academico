@@ -1,5 +1,6 @@
   ALGORITMOS.AgregarAlumno.resources - Embedded, ContainedInManifestFile, 
   ALGORITMOS.Form1.resources - Embedded, ContainedInManifestFile, 
+  ALGORITMOS.FormAsistencia.resources - Embedded, ContainedInManifestFile, 
   ALGORITMOS.MyForm.resources - Embedded, ContainedInManifestFile, 
   ALGORITMOS.ReporteAlumnos.resources - Embedded, ContainedInManifestFile, 
   ALGORITMOS.VistaAlumnos.resources - Embedded, ContainedInManifestFile, 
@@ -56,12 +57,19 @@ Class ALGORITMOS.VistaAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeField
   Methods:
     LlenarGrid($ArrayType$$$BY04V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@* IsConst IsConst): PrivateScope, Public, HideBySig
     Convertir(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+Class ALGORITMOS.FormAsistencia: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label lbl_alumno : Public
+    System.Windows.Forms.RadioButton btn_asistencia : Public
 Class ALGORITMOS.ReporteAlumnos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     LlenarDatos(vector<Alumno\,std::allocator<Alumno> >*, $ArrayType$$$BY04V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@* IsConst IsConst): PrivateScope, Public, HideBySig
     toSystemString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    toStandardString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, Static, HideBySig
 Class CppCLRWinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -1,9 +1,12 @@
 #pragma once
 
 #include "Alumno.h"
+#include "FormAsistencia.h"
 #include <vector>
 #include <algorithm>
 #include <string>
+
+
 namespace ALGORITMOS {
 
 	using namespace System;
@@ -127,6 +130,7 @@ namespace ALGORITMOS {
 			this->dataGrid->ScrollBars = System::Windows::Forms::ScrollBars::None;
 			this->dataGrid->Size = System::Drawing::Size(664, 348);
 			this->dataGrid->TabIndex = 1;
+			this->dataGrid->CellDoubleClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &ReporteAlumnos::dataGrid_CellDoubleClick);
 			// 
 			// data_uno
 			// 
@@ -190,7 +194,6 @@ namespace ALGORITMOS {
 #pragma endregion
 		public: void LlenarDatos(vector<Alumno> v1, string Mat[10][5])
 		{
-
 			this->dataGrid->Columns->Add("Index", "Nombre");
 			this->dataGrid->Columns->Add("cat", "Curso");
 			this->dataGrid->Columns->Add("cur", "Actividades");
@@ -219,5 +222,26 @@ namespace ALGORITMOS {
 			String^ str = gcnew String(cadena.c_str());
 			return str;
 		}
+		private: System::Void dataGrid_CellDoubleClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+			int n = e->RowIndex;
+			string nombre = this->toStandardString(this->dataGrid->Rows[n]->Cells[0]->Value->ToString());
+			ALGORITMOS::FormAsistencia^ f2 = gcnew(ALGORITMOS::FormAsistencia);
+			this->Visible = false;
+			f2->lbl_alumno->Text = this->toSystemString(nombre);
+			f2->ShowDialog();
+			this->Visible = true;
+		}
+		
+		public: static string toStandardString(System::String^ string)
+		{
+			using System::Runtime::InteropServices::Marshal;
+			System::IntPtr pointer = Marshal::StringToHGlobalAnsi(string);
+			char* charPointer = reinterpret_cast<char*>(pointer.ToPointer());
+			std::string returnString(charPointer, string->Length);
+			Marshal::FreeHGlobal(pointer);
+			return returnString;
+		}
+
+
 };
 }

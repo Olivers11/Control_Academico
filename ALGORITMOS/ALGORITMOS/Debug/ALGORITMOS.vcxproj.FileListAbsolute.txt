@@ -6,3 +6,4 @@ D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.AgregarAlumno.resources
 D:\Repositorios\ALGORITMOS\Debug\umg.png
 D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.VistaAlumnos.resources
 D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.ReporteAlumnos.resources
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Debug\ALGORITMOS.FormAsistencia.resources

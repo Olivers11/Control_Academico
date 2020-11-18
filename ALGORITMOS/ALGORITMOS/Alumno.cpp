@@ -13,6 +13,7 @@ Alumno::Alumno()
 	this->parcial1 = 0;
 	this->parcial2 = 0;
 	this->examen = 0;
+	this->asistencia = false;
 }
 
 
@@ -73,4 +74,8 @@ float Alumno::parcialDos()
 	return this->parcial2;
 }
 
+void Alumno::Asistir(bool v)
+{
+	this->asistencia = v;
+}
 

@@ -15,10 +15,12 @@ private:
 	float parcial1;
 	float parcial2;
 	float zona;
+	bool asistencia;
 public:
 	Alumno();
 	void insertarDatos(string, string, int, float, float, float, float, float);
 	string RetornarNombre();
+	void Asistir(bool);
 	string RetornarCarnet();
 	int retornarCurso();
 	float retornarZona();

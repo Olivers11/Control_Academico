@@ -1,9 +1,13 @@
 #pragma once
+// Importamos formularios secundarios
 #include "MyForm.h"
 #include "AgregarAlumno.h"
 #include "VistaAlumnos.h"
 #include "ReporteAlumnos.h"
 #include "Alumno.h"
+//----- end -------
+
+//--- LIBRERIAS ---- 
 #include <vector>
 #include <algorithm>
 #include <fstream>
@@ -17,8 +21,8 @@ namespace CppCLRWinformsProjekt {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
+	string mat[10][5]; // Matriz de cursos
 	//objeto principal de la logica
-	string mat[10][5];
 	vector<Alumno> alumnos;
 	/// <summary>
 	/// Zusammenfassung für Form1
@@ -28,13 +32,10 @@ namespace CppCLRWinformsProjekt {
 	public:
 		
 		
-
+		//constructor de formulario principal
 		Form1(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Konstruktorcode hier hinzufügen.
-			//
 		}
 
 	protected:
@@ -71,10 +72,8 @@ namespace CppCLRWinformsProjekt {
 
 	private:
 		
+		//Instancia del Formulario "MyForm"
 		ALGORITMOS::MyForm^ form2 = gcnew(ALGORITMOS::MyForm);
-		/// <summary>
-		/// Erforderliche Designervariable.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -84,6 +83,7 @@ namespace CppCLRWinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			// ---------- INICIACION DE COMPONENTES -------------
 			this->barra = (gcnew System::Windows::Forms::Panel());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -347,6 +347,7 @@ namespace CppCLRWinformsProjekt {
 		this->Visible = true;
 	}
 
+	//METODO PARA REMOVER ELEMENTOS DEL PANEL
 	public: void LimpiarPanel()
 	{
 		if (this->panel_contenedor->Controls->Count > 0)
@@ -367,16 +368,7 @@ namespace CppCLRWinformsProjekt {
 		mat[this->tamanio][4] = c5;
 	}
 
-	
-
-	
-
-
-
-
-
-
-	//metodos de conversion std::string && system::string^
+	//metodos de conversion std::string && system::String^
 	public: static String^ toSystemString(string cadena)
 	{
 		return gcnew String(cadena.c_str());
@@ -391,6 +383,7 @@ namespace CppCLRWinformsProjekt {
 		Marshal::FreeHGlobal(pointer);
 		return returnString;
 	}
+	//---------- convertion methods end -------------
 	
 	//metodo para abrir un nuevo frmulario dentro del panel
 	public: void AbrirFormulario(Form^ hijo)
@@ -406,6 +399,10 @@ namespace CppCLRWinformsProjekt {
 		//this->Hide();
 		hijo->Show();
 	}
+
+
+
+	//Metodo para abrir formulario "AgregarAlumno" y obtener los datos utilizados en el Dialogo con el usuario
 	private: System::Void btn_addAl_Click(System::Object^ sender, System::EventArgs^ e) 
 	{
 		if (mat[0][0] != "")
@@ -446,7 +443,6 @@ namespace CppCLRWinformsProjekt {
 			MessageBox::Show(L"Antes debe agregar un curso(como minimo) ");
 		}
 		this->Visible = true;
-		
 	}
 	
 
@@ -476,7 +472,7 @@ namespace CppCLRWinformsProjekt {
 		}
 		else
 		{
-			
+			MessageBox::Show(L"No hay ningun alumno registrado, registre primero para habilitar al vista");
 		}
 		
 	}
