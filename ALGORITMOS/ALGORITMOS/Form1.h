@@ -83,7 +83,6 @@ namespace CppCLRWinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			// ---------- INICIACION DE COMPONENTES -------------
 			this->barra = (gcnew System::Windows::Forms::Panel());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -208,7 +207,7 @@ namespace CppCLRWinformsProjekt {
 			this->btn_cursos->Name = L"btn_cursos";
 			this->btn_cursos->Size = System::Drawing::Size(158, 39);
 			this->btn_cursos->TabIndex = 3;
-			this->btn_cursos->Text = L"Ver Cursos";
+			this->btn_cursos->Text = L"Listado de Cursos";
 			this->btn_cursos->UseVisualStyleBackColor = true;
 			this->btn_cursos->Click += gcnew System::EventHandler(this, &Form1::btn_cursos_Click);
 			// 
@@ -227,7 +226,7 @@ namespace CppCLRWinformsProjekt {
 			this->btn_alumnos->Name = L"btn_alumnos";
 			this->btn_alumnos->Size = System::Drawing::Size(158, 39);
 			this->btn_alumnos->TabIndex = 2;
-			this->btn_alumnos->Text = L"Alumnos";
+			this->btn_alumnos->Text = L"Reporte de Zonas";
 			this->btn_alumnos->UseVisualStyleBackColor = true;
 			this->btn_alumnos->Click += gcnew System::EventHandler(this, &Form1::btn_alumnos_Click);
 			// 

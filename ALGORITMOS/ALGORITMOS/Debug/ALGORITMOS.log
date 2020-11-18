@@ -1,9 +1,9 @@
 ﻿  CppCLR_WinformsProjekt.cpp
 D:\Repositorios\ALGORITMOS\ALGORITMOS\ReporteAlumnos.h(205,22): warning C4018: '<': no coinciden signed/unsigned
-D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(428,13): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(427,13): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(428,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
 D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(429,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
 D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(430,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
 D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(431,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Repositorios\ALGORITMOS\ALGORITMOS\Form1.h(432,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
   AgregarAlumno.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   ALGORITMOS.vcxproj -> D:\Repositorios\ALGORITMOS\Debug\ALGORITMOS.exe
